@@ -1,7 +1,7 @@
 {
  "app": "VenturiFlow Master",
  "version": 1,
- "savedAt": "2026-10-11T21:36:03.507Z",
+ "savedAt": "2026-10-11T21:36:13.822Z",
  "savedBy": "MSI",
  "state": {
   "v": 1,
@@ -446,7 +446,7 @@
    "TminK": 283.15,
    "TmaxK": 353.15,
    "refAcc": 0.1,
-   "model": "K",
+   "model": "crtab",
    "apply": false,
    "codeTab": "txt",
    "plc": {
