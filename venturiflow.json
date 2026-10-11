@@ -1,0 +1,290 @@
+{
+ "app": "VenturiFlow Master",
+ "version": 1,
+ "savedAt": "2026-10-11T21:06:02.801Z",
+ "savedBy": "MSI",
+ "state": {
+  "v": 1,
+  "method": "iso",
+  "mfg": "machined",
+  "fitting": "bend90",
+  "inputs": {
+   "cd": {
+    "v": 0.98,
+    "u": "-"
+   },
+   "ucd": {
+    "v": 2,
+    "u": "%"
+   },
+   "D": {
+    "v": 54.5,
+    "u": "mm"
+   },
+   "d": {
+    "v": 40.8052,
+    "u": "mm"
+   },
+   "theta": {
+    "v": 8.5,
+    "u": "deg"
+   },
+   "qMax": {
+    "v": 22,
+    "u": "kg/s"
+   },
+   "p1": {
+    "v": 3,
+    "u": "bar"
+   },
+   "T": {
+    "v": 50,
+    "u": "C"
+   },
+   "txAcc": {
+    "v": 0.075,
+    "u": "%"
+   },
+   "txSpan": {
+    "v": 1,
+    "u": "mbar"
+   },
+   "tolD": {
+    "v": 0.25,
+    "u": "%"
+   },
+   "told": {
+    "v": 0.05,
+    "u": "%"
+   },
+   "uRho": {
+    "v": 0.1,
+    "u": "%"
+   }
+  },
+  "units": {
+   "flow": "m3/h",
+   "pressure": "mbar",
+   "length": "mm",
+   "temperature": "C",
+   "density": "kg/m3",
+   "viscosity": "cP"
+  },
+  "fluidUnits": {
+   "rho": "kg/m3",
+   "mu": "cP",
+   "pv": "kPa"
+  },
+  "fluids": [
+   {
+    "id": "water",
+    "name": "Su",
+    "type": "liquid",
+    "rho": 998.2,
+    "mu": 0.001002,
+    "pv": 2339,
+    "kappa": 1.4,
+    "M": 0,
+    "Z": 1,
+    "table": [
+     {
+      "T": 273.15,
+      "rho": 999.84,
+      "mu": 0.001792,
+      "pv": 611
+     },
+     {
+      "T": 283.15,
+      "rho": 999.7,
+      "mu": 0.001307,
+      "pv": 1228
+     },
+     {
+      "T": 293.15,
+      "rho": 998.21,
+      "mu": 0.001002,
+      "pv": 2339
+     },
+     {
+      "T": 303.15,
+      "rho": 995.65,
+      "mu": 0.0007980000000000001,
+      "pv": 4247
+     },
+     {
+      "T": 313.15,
+      "rho": 992.22,
+      "mu": 0.000653,
+      "pv": 7384
+     },
+     {
+      "T": 323.15,
+      "rho": 988.04,
+      "mu": 0.0005470000000000001,
+      "pv": 12350
+     },
+     {
+      "T": 333.15,
+      "rho": 983.2,
+      "mu": 0.000467,
+      "pv": 19950
+     },
+     {
+      "T": 343.15,
+      "rho": 977.76,
+      "mu": 0.000404,
+      "pv": 31200
+     },
+     {
+      "T": 353.15,
+      "rho": 971.79,
+      "mu": 0.000355,
+      "pv": 47410
+     },
+     {
+      "T": 363.15,
+      "rho": 965.31,
+      "mu": 0.000315,
+      "pv": 70180
+     },
+     {
+      "T": 373.15,
+      "rho": 958.35,
+      "mu": 0.00028199999999999997,
+      "pv": 101420
+     }
+    ],
+    "builtin": true
+   },
+   {
+    "id": "air",
+    "name": "Hava",
+    "type": "gas",
+    "rho": 1.204,
+    "mu": 0.0000181,
+    "pv": 0,
+    "kappa": 1.4,
+    "M": 28.965,
+    "Z": 1,
+    "table": null,
+    "builtin": true
+   },
+   {
+    "id": "ng",
+    "name": "Doğal Gaz (≈CH₄)",
+    "type": "gas",
+    "rho": 0.668,
+    "mu": 0.000011,
+    "pv": 0,
+    "kappa": 1.31,
+    "M": 16.04,
+    "Z": 0.998,
+    "table": null,
+    "builtin": true
+   },
+   {
+    "id": "n2",
+    "name": "Azot (N₂)",
+    "type": "gas",
+    "rho": 1.165,
+    "mu": 0.0000176,
+    "pv": 0,
+    "kappa": 1.4,
+    "M": 28.013,
+    "Z": 1,
+    "table": null,
+    "builtin": true
+   },
+   {
+    "id": "glycol30",
+    "name": "Su–Glikol %30",
+    "type": "liquid",
+    "rho": 1040,
+    "mu": 0.0025,
+    "pv": 2000,
+    "kappa": 1.4,
+    "M": 0,
+    "Z": 1,
+    "table": null,
+    "builtin": true
+   },
+   {
+    "id": "diesel",
+    "name": "Dizel",
+    "type": "liquid",
+    "rho": 832,
+    "mu": 0.003,
+    "pv": 300,
+    "kappa": 1.4,
+    "M": 0,
+    "Z": 1,
+    "table": null,
+    "builtin": true
+   }
+  ],
+  "activeFluid": "water",
+  "measured": [],
+  "whatIf": 63.5,
+  "influx": {
+   "url": "http://10.10.2.6:8086",
+   "db": "db",
+   "user": "",
+   "pass": "",
+   "measurement": "venturi",
+   "rate": 1,
+   "dp": {
+    "enabled": true,
+    "field": "value",
+    "tagKey": "sensor",
+    "tagValue": "DPT-101",
+    "unit": "mbar"
+   },
+   "q": {
+    "enabled": true,
+    "field": "asdasdsad",
+    "tagKey": "sensor",
+    "tagValue": "FT-101",
+    "unit": "m3/h"
+   },
+   "T": {
+    "enabled": true,
+    "field": "value",
+    "tagKey": "sensor",
+    "tagValue": "TT-101",
+    "unit": "C"
+   },
+   "rho": {
+    "enabled": true,
+    "field": "value",
+    "tagKey": "sensor",
+    "tagValue": "DT-101",
+    "unit": "kg/m3"
+   },
+   "avg": {
+    "mode": "n",
+    "n": 30,
+    "newOnly": true
+   }
+  },
+  "calib": {
+   "rows": [],
+   "units": {
+    "q": "kg/h",
+    "dp": "mbar",
+    "T": "C",
+    "rho": "kg/m3"
+   },
+   "TminK": 283.15,
+   "TmaxK": 353.15,
+   "refAcc": 0.1,
+   "model": "auto",
+   "apply": false,
+   "codeTab": "tc",
+   "plc": {
+    "name": "FB_VenturiFlow",
+    "dpUnit": "mbar",
+    "lowCut": 3
+   }
+  }
+ }
+}
