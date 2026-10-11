@@ -1,7 +1,7 @@
 {
  "app": "VenturiFlow Master",
  "version": 1,
- "savedAt": "2026-10-11T21:37:34.285Z",
+ "savedAt": "2026-10-11T21:51:21.262Z",
  "savedBy": "MSI",
  "state": {
   "v": 1,
@@ -503,6 +503,167 @@
         "avg": {
          "mode": "n",
          "n": 30
+        }
+       }
+      }
+     }
+    }
+   },
+   {
+    "id": "vmv4cy3g9aqa",
+    "name": "Venturi 2",
+    "note": "",
+    "created": "2026-10-11T21:51:13.401Z",
+    "updated": "2026-10-11T21:51:21.262Z",
+    "data": {
+     "method": "iso",
+     "mfg": "machined",
+     "fitting": "bend90",
+     "inputs": {
+      "cd": {
+       "v": 0.98,
+       "u": "-"
+      },
+      "ucd": {
+       "v": 2,
+       "u": "%"
+      },
+      "D": {
+       "v": 102.26,
+       "u": "mm"
+      },
+      "d": {
+       "v": 61.36,
+       "u": "mm"
+      },
+      "theta": {
+       "v": 7,
+       "u": "deg"
+      },
+      "qMax": {
+       "v": 100,
+       "u": "m3/h"
+      },
+      "p1": {
+       "v": 3,
+       "u": "bar"
+      },
+      "T": {
+       "v": 20,
+       "u": "C"
+      },
+      "txAcc": {
+       "v": 0.075,
+       "u": "%"
+      },
+      "txSpan": {
+       "v": 500,
+       "u": "mbar"
+      },
+      "tolD": {
+       "v": 0.25,
+       "u": "%"
+      },
+      "told": {
+       "v": 0.05,
+       "u": "%"
+      },
+      "uRho": {
+       "v": 0.1,
+       "u": "%"
+      }
+     },
+     "activeFluid": "water",
+     "measured": [],
+     "whatIf": 70,
+     "calib": {
+      "rows": [],
+      "units": {
+       "q": "kg/h",
+       "dp": "mbar",
+       "T": "C",
+       "rho": "kg/m3"
+      },
+      "TminK": 283.15,
+      "TmaxK": 353.15,
+      "refAcc": 0.1,
+      "model": "auto",
+      "apply": false,
+      "codeTab": "tc",
+      "plc": {
+       "name": "FB_VenturiFlow",
+       "dpUnit": "mbar",
+       "lowCut": 3
+      }
+     },
+     "sensors": {
+      "dpMode": "direct",
+      "pGauge": true,
+      "list": {
+       "dp": {
+        "enabled": true,
+        "name": "DP1sdfsdfdsfds",
+        "unit": "mbar",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "p1": {
+        "enabled": false,
+        "name": "P1",
+        "unit": "bar",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "p2": {
+        "enabled": false,
+        "name": "P2",
+        "unit": "bar",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "q": {
+        "enabled": false,
+        "name": "Q1",
+        "unit": "kg/h",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "T": {
+        "enabled": false,
+        "name": "T1",
+        "unit": "C",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "rho": {
+        "enabled": false,
+        "name": "RHO1",
+        "unit": "kg/m3",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
         }
        }
       }
