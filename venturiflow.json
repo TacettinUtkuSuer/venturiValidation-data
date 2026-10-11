@@ -1,7 +1,7 @@
 {
  "app": "VenturiFlow Master",
  "version": 1,
- "savedAt": "2026-10-11T21:09:16.193Z",
+ "savedAt": "2026-10-11T21:26:26.035Z",
  "savedBy": "MSI",
  "state": {
   "v": 1,
@@ -224,7 +224,7 @@
   ],
   "activeFluid": "water",
   "measured": [],
-  "whatIf": 63.5,
+  "whatIf": 86,
   "influx": {
    "url": "http://10.10.2.6:8086",
    "db": "db",
