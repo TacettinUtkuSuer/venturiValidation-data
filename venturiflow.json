@@ -1,7 +1,7 @@
 {
  "app": "VenturiFlow Master",
  "version": 1,
- "savedAt": "2026-10-11T21:06:02.801Z",
+ "savedAt": "2026-10-11T21:09:16.193Z",
  "savedBy": "MSI",
  "state": {
   "v": 1,
@@ -279,7 +279,7 @@
    "refAcc": 0.1,
    "model": "auto",
    "apply": false,
-   "codeTab": "tc",
+   "codeTab": "txt",
    "plc": {
     "name": "FB_VenturiFlow",
     "dpUnit": "mbar",
