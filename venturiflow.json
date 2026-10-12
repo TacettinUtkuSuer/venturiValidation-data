@@ -1,7 +1,7 @@
 {
  "app": "VenturiFlow Master",
  "version": 2,
- "savedAt": "2026-10-12T15:32:19.745Z",
+ "savedAt": "2026-10-12T15:33:07.071Z",
  "savedBy": "IvedikTestPC",
  "state": {
   "v": 2,
@@ -366,7 +366,7 @@
     "name": "FS_5",
     "note": "Su pompası sonrası",
     "created": "2026-10-12T12:18:48.190Z",
-    "updated": "2026-10-12T15:32:14.740Z",
+    "updated": "2026-10-12T15:32:43.495Z",
     "data": {
      "method": "iso",
      "mfg": "machined",
@@ -632,7 +632,7 @@
       "refAcc": 0.1,
       "model": "auto",
       "apply": false,
-      "codeTab": "tc",
+      "codeTab": "txt",
       "plc": {
        "name": "FB_VenturiFlow",
        "dpUnit": "mbar",
