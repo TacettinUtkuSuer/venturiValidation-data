@@ -1,7 +1,7 @@
 {
  "app": "VenturiFlow Master",
  "version": 2,
- "savedAt": "2026-10-12T15:27:07.527Z",
+ "savedAt": "2026-10-12T15:27:18.062Z",
  "savedBy": "IvedikTestPC",
  "state": {
   "v": 2,
@@ -366,7 +366,7 @@
     "name": "Venturi 2",
     "note": "",
     "created": "2026-10-12T12:18:48.190Z",
-    "updated": "2026-10-12T15:27:02.522Z",
+    "updated": "2026-10-12T15:27:13.055Z",
     "data": {
      "method": "iso",
      "mfg": "machined",
@@ -401,7 +401,7 @@
        "u": "bar"
       },
       "T": {
-       "v": 20,
+       "v": 60,
        "u": "C"
       },
       "txAcc": {
