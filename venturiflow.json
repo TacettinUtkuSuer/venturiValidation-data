@@ -1,8 +1,8 @@
 {
  "app": "VenturiFlow Master",
  "version": 2,
- "savedAt": "2026-10-12T18:08:17.206Z",
- "savedBy": "MMUkontrolPC",
+ "savedAt": "2026-10-12T18:08:02.362Z",
+ "savedBy": "Taco-hp",
  "state": {
   "v": 2,
   "fluids": [
@@ -241,6 +241,79 @@
       "pv": null
      }
     ]
+   },
+   {
+    "id": "fmv5ketez5afo",
+    "name": "JP8",
+    "type": "liquid",
+    "rho": 817.29,
+    "mu": 1.87254,
+    "pv": 0,
+    "kappa": 1.4,
+    "M": 0,
+    "Z": 1,
+    "table": [
+     {
+      "T": 273.15,
+      "rho": 817.29,
+      "mu": 1.87254,
+      "pv": null
+     },
+     {
+      "T": 283.15,
+      "rho": 809.15,
+      "mu": 1.91613,
+      "pv": null
+     },
+     {
+      "T": 293.15,
+      "rho": 801,
+      "mu": 1.95956,
+      "pv": null
+     },
+     {
+      "T": 303.15,
+      "rho": 792.85,
+      "mu": 2.00285,
+      "pv": null
+     },
+     {
+      "T": 313.15,
+      "rho": 784.7,
+      "mu": 2.04599,
+      "pv": null
+     },
+     {
+      "T": 323.15,
+      "rho": 776.56,
+      "mu": 2.089,
+      "pv": null
+     },
+     {
+      "T": 333.15,
+      "rho": 768.44,
+      "mu": 2.13189,
+      "pv": null
+     },
+     {
+      "T": 343.15,
+      "rho": 760.33,
+      "mu": 2.17468,
+      "pv": null
+     },
+     {
+      "T": 353.15,
+      "rho": 752.24,
+      "mu": 2.2173800000000004,
+      "pv": null
+     },
+     {
+      "T": 363.15,
+      "rho": 744.16,
+      "mu": 2.2600100000000003,
+      "pv": null
+     }
+    ]
    }
   ],
   "venturis": [
@@ -249,7 +322,7 @@
     "name": "Venturi 1",
     "note": "",
     "created": "2026-10-11T22:10:56.208Z",
-    "updated": "2026-10-12T18:08:12.203Z",
+    "updated": "2026-10-12T18:07:57.343Z",
     "data": {
      "method": "iso",
      "mfg": "machined",
@@ -308,7 +381,7 @@
        "u": "%"
       }
      },
-     "activeFluid": "fmv5kdr1k3otw",
+     "activeFluid": "fmv5ketez5afo",
      "measured": [],
      "whatIf": 66.5,
      "calib": {
