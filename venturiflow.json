@@ -1,7 +1,7 @@
 {
  "app": "VenturiFlow Master",
  "version": 2,
- "savedAt": "2026-10-12T15:27:48.214Z",
+ "savedAt": "2026-10-12T15:28:00.430Z",
  "savedBy": "IvedikTestPC",
  "state": {
   "v": 2,
@@ -364,9 +364,9 @@
    {
     "id": "vmv57xt6mxkb",
     "name": "FS_5",
-    "note": "",
+    "note": "Su pompası sonrası",
     "created": "2026-10-12T12:18:48.190Z",
-    "updated": "2026-10-12T15:27:42.910Z",
+    "updated": "2026-10-12T15:27:55.126Z",
     "data": {
      "method": "iso",
      "mfg": "machined",
