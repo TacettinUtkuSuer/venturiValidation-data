@@ -1,8 +1,8 @@
 {
  "app": "VenturiFlow Master",
  "version": 2,
- "savedAt": "2026-10-12T18:07:26.481Z",
- "savedBy": "MMUkontrolPC",
+ "savedAt": "2026-10-12T18:07:35.912Z",
+ "savedBy": "Taco-hp",
  "state": {
   "v": 2,
   "fluids": [
@@ -150,6 +150,97 @@
     "Z": 1,
     "table": null,
     "builtin": true
+   },
+   {
+    "id": "fmv5kdr1k3otw",
+    "name": "PAO",
+    "type": "liquid",
+    "rho": 850.1,
+    "mu": 1.8995,
+    "pv": 0,
+    "kappa": 1.4,
+    "M": 0,
+    "Z": 1,
+    "table": [
+     {
+      "T": 219.14999999999998,
+      "rho": 850.1,
+      "mu": 1.8995,
+      "pv": null
+     },
+     {
+      "T": 233.14999999999998,
+      "rho": 839.1,
+      "mu": 1.9563,
+      "pv": null
+     },
+     {
+      "T": 253.14999999999998,
+      "rho": 823.4,
+      "mu": 2.0385,
+      "pv": null
+     },
+     {
+      "T": 273.15,
+      "rho": 807.55,
+      "mu": 2.1219699999999997,
+      "pv": null
+     },
+     {
+      "T": 283.15,
+      "rho": 799.53,
+      "mu": 2.16432,
+      "pv": null
+     },
+     {
+      "T": 293.15,
+      "rho": 791.43,
+      "mu": 2.20716,
+      "pv": null
+     },
+     {
+      "T": 303.15,
+      "rho": 783.18,
+      "mu": 2.25061,
+      "pv": null
+     },
+     {
+      "T": 313.15,
+      "rho": 774.74,
+      "mu": 2.29468,
+      "pv": null
+     },
+     {
+      "T": 323.15,
+      "rho": 766.02,
+      "mu": 2.33874,
+      "pv": null
+     },
+     {
+      "T": 333.15,
+      "rho": 756.99,
+      "mu": 2.37998,
+      "pv": null
+     },
+     {
+      "T": 343.15,
+      "rho": 747.88,
+      "mu": 2.41302,
+      "pv": null
+     },
+     {
+      "T": 353.15,
+      "rho": 739.34,
+      "mu": 2.4431,
+      "pv": null
+     },
+     {
+      "T": 363.15,
+      "rho": 732.06,
+      "mu": 2.49188,
+      "pv": null
+     }
+    ]
    }
   ],
   "venturis": [
@@ -284,6 +375,214 @@
       "model": "cre",
       "apply": false,
       "codeTab": "txt",
+      "plc": {
+       "name": "FB_VenturiFlow",
+       "dpUnit": "mbar",
+       "p1Unit": "bar",
+       "lowCut": 3
+      },
+      "hist": {
+       "hours": 6,
+       "groupSec": 10,
+       "stableSec": 120,
+       "cvQ": 0.5,
+       "cvDp": 1,
+       "minFlowPct": 5
+      }
+     },
+     "sensors": {
+      "dpMode": "direct",
+      "pGauge": true,
+      "list": {
+       "dp": {
+        "enabled": true,
+        "name": "DP1",
+        "unit": "mbar",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "p1": {
+        "enabled": false,
+        "name": "P1",
+        "unit": "bar",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "p2": {
+        "enabled": false,
+        "name": "P2",
+        "unit": "bar",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "q": {
+        "enabled": true,
+        "name": "Q1",
+        "unit": "kg/h",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "T": {
+        "enabled": false,
+        "name": "T1",
+        "unit": "C",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       },
+       "rho": {
+        "enabled": false,
+        "name": "RHO1",
+        "unit": "kg/m3",
+        "a": 1,
+        "b": 0,
+        "avg": {
+         "mode": "n",
+         "n": 5
+        }
+       }
+      }
+     },
+     "units": {
+      "flow": "m3/h",
+      "pressure": "mbar",
+      "length": "mm",
+      "temperature": "C",
+      "density": "kg/m3",
+      "viscosity": "cP"
+     },
+     "fluidUnits": {
+      "rho": "kg/m3",
+      "mu": "cP",
+      "pv": "kPa"
+     },
+     "influx": {
+      "url": "http://10.10.2.6:8086",
+      "db": "lc_100",
+      "user": "",
+      "pass": "",
+      "measurement": "telemetry",
+      "rateMs": 1000,
+      "windowMin": 5,
+      "nameMode": "field",
+      "tagKey": "name",
+      "valueField": "value",
+      "newOnly": true
+     },
+     "conv": {
+      "dim": "flow",
+      "v": 1,
+      "from": "m3/h"
+     },
+     "fluidChart": {
+      "prop": "nu"
+     },
+     "trend": {
+      "minutes": 10
+     }
+    }
+   },
+   {
+    "id": "vmv5ked3cvlc0",
+    "name": "Venturi 1 (bu bilgisayar)",
+    "note": "",
+    "created": "2026-10-11T22:10:56.208Z",
+    "updated": "2026-10-12T18:07:07.605Z",
+    "data": {
+     "method": "iso",
+     "mfg": "machined",
+     "fitting": "bend90",
+     "inputs": {
+      "cd": {
+       "v": 0.98,
+       "u": "-"
+      },
+      "ucd": {
+       "v": 2,
+       "u": "%"
+      },
+      "D": {
+       "v": 102.26,
+       "u": "mm"
+      },
+      "d": {
+       "v": 61.36,
+       "u": "mm"
+      },
+      "theta": {
+       "v": 7,
+       "u": "deg"
+      },
+      "qMax": {
+       "v": 100,
+       "u": "m3/h"
+      },
+      "p1": {
+       "v": 3,
+       "u": "bar"
+      },
+      "T": {
+       "v": 20,
+       "u": "C"
+      },
+      "txAcc": {
+       "v": 0.075,
+       "u": "%"
+      },
+      "txSpan": {
+       "v": 500,
+       "u": "mbar"
+      },
+      "tolD": {
+       "v": 0.25,
+       "u": "%"
+      },
+      "told": {
+       "v": 0.05,
+       "u": "%"
+      },
+      "uRho": {
+       "v": 0.1,
+       "u": "%"
+      }
+     },
+     "activeFluid": "fmv5kdr1k3otw",
+     "measured": [],
+     "whatIf": 66.5,
+     "calib": {
+      "rows": [],
+      "units": {
+       "q": "kg/h",
+       "dp": "mbar",
+       "T": "C",
+       "rho": "kg/m3",
+       "p1": "bar"
+      },
+      "TminK": 283.15,
+      "TmaxK": 353.15,
+      "refAcc": 0.1,
+      "model": "auto",
+      "apply": false,
+      "codeTab": "tc",
       "plc": {
        "name": "FB_VenturiFlow",
        "dpUnit": "mbar",
