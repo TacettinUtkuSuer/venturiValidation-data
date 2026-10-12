@@ -1,7 +1,7 @@
 {
  "app": "VenturiFlow Master",
  "version": 2,
- "savedAt": "2026-10-12T15:29:00.694Z",
+ "savedAt": "2026-10-12T15:29:27.602Z",
  "savedBy": "IvedikTestPC",
  "state": {
   "v": 2,
@@ -366,7 +366,7 @@
     "name": "FS_5",
     "note": "Su pompası sonrası",
     "created": "2026-10-12T12:18:48.190Z",
-    "updated": "2026-10-12T15:28:55.692Z",
+    "updated": "2026-10-12T15:29:26.142Z",
     "data": {
      "method": "iso",
      "mfg": "machined",
@@ -427,7 +427,7 @@
      },
      "activeFluid": "water",
      "measured": [],
-     "whatIf": 11,
+     "whatIf": 40.5,
      "calib": {
       "rows": [],
       "units": {
