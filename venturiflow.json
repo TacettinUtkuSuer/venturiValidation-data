@@ -1,8 +1,8 @@
 {
  "app": "VenturiFlow Master",
  "version": 2,
- "savedAt": "2026-10-12T18:07:35.912Z",
- "savedBy": "Taco-hp",
+ "savedAt": "2026-10-12T18:08:17.206Z",
+ "savedBy": "MMUkontrolPC",
  "state": {
   "v": 2,
   "fluids": [
@@ -249,7 +249,7 @@
     "name": "Venturi 1",
     "note": "",
     "created": "2026-10-11T22:10:56.208Z",
-    "updated": "2026-10-12T16:21:18.353Z",
+    "updated": "2026-10-12T18:08:12.203Z",
     "data": {
      "method": "iso",
      "mfg": "machined",
@@ -308,7 +308,7 @@
        "u": "%"
       }
      },
-     "activeFluid": "water",
+     "activeFluid": "fmv5kdr1k3otw",
      "measured": [],
      "whatIf": 66.5,
      "calib": {
